@@ -4,8 +4,20 @@
         "source": "/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v11/notification_template_big_media_narrow.xml"
     },
     {
+        "merged": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow.xml",
+        "source": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v11/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
+        "source": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v11/notification_template_big_media.xml"
+    },
+    {
         "merged": "/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow_custom.xml",
         "source": "/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/res/merged/debug/layout-v11/notification_media_cancel_action.xml",
+        "source": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v11/notification_media_cancel_action.xml"
     },
     {
         "merged": "/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/res/merged/debug/layout-v11/notification_media_cancel_action.xml",
@@ -22,5 +34,17 @@
     {
         "merged": "/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
         "source": "/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v11/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_custom.xml",
+        "source": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v11/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/res/merged/debug/layout-v11/notification_media_action.xml",
+        "source": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v11/notification_media_action.xml"
     }
 ]

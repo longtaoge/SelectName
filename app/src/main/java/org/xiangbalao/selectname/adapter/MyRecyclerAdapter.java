@@ -1,4 +1,4 @@
-package org.xiangbalao.hawkdome.adapter;
+package org.xiangbalao.selectname.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.xiangbalao.hawkdome.R;
+import org.xiangbalao.selectname.R;
 
 import java.util.List;
 

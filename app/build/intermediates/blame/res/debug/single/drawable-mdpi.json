@@ -2,5 +2,9 @@
     {
         "merged": "/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
         "source": "/Users/longtaoge/googlesamples/HawkDemo-master/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/longtaoge/googlesamples/SelectName/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/longtaoge/googlesamples/SelectName/app/src/main/res/drawable-mdpi/ic_launcher.png"
     }
 ]

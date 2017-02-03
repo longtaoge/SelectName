@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.xiangbalao.hawkdome"
+    package="org.xiangbalao.selectname"
     android:versionCode="1"
     android:versionName="1.0">
 
@@ -20,7 +20,7 @@
         <uses-library android:name="android.test.runner" />
 
         <activity
-            android:name="org.xiangbalao.hawkdome.MainActivity"
+            android:name="org.xiangbalao.selectname.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -30,12 +30,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NameListActivity"
+            android:name="org.xiangbalao.selectname.NameListActivity"
             android:screenOrientation="portrait" />
 
 
         <activity
-            android:name=".NameList1Activity"
+            android:name="org.xiangbalao.selectname.NameList1Activity"
             android:screenOrientation="portrait" />
 
 

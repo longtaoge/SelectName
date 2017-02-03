@@ -1,4 +1,4 @@
-package org.xiangbalao.hawkdome;
+package org.xiangbalao.selectname;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,12 +9,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.orhanobut.hawk.Hawk;
-import com.orhanobut.hawk.HawkBuilder;
-import com.orhanobut.hawk.HawkBuilder.Callback;
-import com.orhanobut.hawk.bean.User;
 
 import org.xiangbalao.common.Constant;
 
@@ -28,18 +24,11 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	private Button btnQuery;
 
-	private EditText etFirstName;
-
-	private EditText lastname;
-
-	private TextView tvFirstName;
-	private TextView tvLastName;
-
 	private TextView tvTextView;
 
     private  	Intent mIntent;
 
-	private String key = User.class.getSimpleName();
+
 	private String TAG=MainActivity.class.getName();
 
 	@Override
@@ -66,12 +55,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		btnQuery = (Button) findViewById(R.id.btnQuery);
 		btnQuery.setOnClickListener(this);
 
-		etFirstName = (EditText) findViewById(R.id.etFirstName);
 
-		lastname = (EditText) findViewById(R.id.lastname);
-
-		tvFirstName = (TextView) findViewById(R.id.tvFirstName);
-		tvLastName = (TextView) findViewById(R.id.tvlayoutName);
 
 		tvTextView = (TextView) findViewById(R.id.tv);
 		tvTextView.setFocusable(true);

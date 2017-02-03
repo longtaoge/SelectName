@@ -1,4 +1,4 @@
-package org.xiangbalao.hawkdome;
+package org.xiangbalao.selectname;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.orhanobut.hawk.Hawk;
 
 import org.xiangbalao.common.Constant;
-import org.xiangbalao.hawkdome.adapter.MyRecyclerAdapter;
+import org.xiangbalao.selectname.adapter.MyRecyclerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

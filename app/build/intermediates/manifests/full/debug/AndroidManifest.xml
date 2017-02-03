@@ -21,7 +21,7 @@
         <uses-library android:name="android.test.runner" />
 
         <activity
-            android:name="org.xiangbalao.hawkdome.MainActivity"
+            android:name="org.xiangbalao.selectname.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -31,10 +31,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.xiangbalao.hawkdome.NameListActivity"
+            android:name="org.xiangbalao.selectname.NameListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="org.xiangbalao.hawkdome.NameList1Activity"
+            android:name="org.xiangbalao.selectname.NameList1Activity"
             android:screenOrientation="portrait" />
     </application>
 

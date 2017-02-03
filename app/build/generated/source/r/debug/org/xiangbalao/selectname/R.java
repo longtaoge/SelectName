@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package org.xiangbalao.hawkdome;
+package org.xiangbalao.selectname;
 
 public final class R {
     public static final class anim {
