@@ -7,7 +7,9 @@
 乡吧佬起名系统，因为爱女选名费尽周折，特意写本程序以博一乐！
 
 
-
+![图1](https://github.com/longtaoge/SelectName/blob/master/app/arts/XLB20170203132216.jpg)
+![图2](https://github.com/longtaoge/SelectName/blob/master/app/arts/XLB20170203132240.jpg)
+![图3](https://github.com/longtaoge/SelectName/blob/master/app/arts/XLB20170203132343.jpg)
 
 
 
