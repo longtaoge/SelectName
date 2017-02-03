@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.1.0_dfe074d83113d23617e76905a18632a072b4ea86.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.1.0_c21c49c1cd48d47f5a82ce1d7a348564c6c1f014.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.0_a03bde2d5d7688ae1d71493ee5ae0d6c65b03b3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.github.longtaoge/ToastUtil/v0.9.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1c8641110b91c4dd41dd0c12c5f9fd0c3d6f9058">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.github.longtaoge-ToastUtil-v0.9.0_8dff0458ead396c7a9ee8f5c48e88a73529a8fa0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.0_43e22d41a5e47b458c7724d588d2410084e1864b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/libs/hawk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="722241960622fa7b0e9d412693c20934d2b46a58">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/hawk_aefc766e2ff70bacec1b14e0428c1b13d8bf5db6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/caches/modules-2/files-2.1/com.google.code.gson/gson/2.5/686c608d1805b6d4d425ec4459e88164ffc85870/gson-2.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/gson-2.5_dc83bc7d02ba154dc9dc157aa9ee7044b8438dce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/libs/hawk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="722241960622fa7b0e9d412693c20934d2b46a58">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/hawk_aefc766e2ff70bacec1b14e0428c1b13d8bf5db6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.0_2f5e886a6df5afbe8cc17ab0b84a624572cc021f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/caches/modules-2/files-2.1/com.google.code.gson/gson/2.5/686c608d1805b6d4d425ec4459e88164ffc85870/gson-2.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/gson-2.5_dc83bc7d02ba154dc9dc157aa9ee7044b8438dce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_794a7a5616953d191de1d3c35f910d8bd51a48ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_8ff7ccc706d743b391e907448f516caa559cf4a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.0_93cede7979f079c41730db1921d8bd37fe0661cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.1.0_8fa37f09cb2e200554791452e4d06989a66ee1d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.0_6c185fcb3a7858a412849ec7b429280ea38e2f2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_6acaf0d0182e491fb1e5781e6a5a843b999eae15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_4aa13af7d5fdfec3350f25c43676079a06e21768.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/longtaoge/googlesamples/HawkDemo-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_1680b3473468a61be894004b142412cb05e2156e.jar" />
+    </item>
+
+</items>

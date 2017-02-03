@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">乡吧佬起名</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="name_11">缤、阐、镡、郸、党、窦、瀚、舰、矍、觉、醴、鹛、檬、聍、飘、荠、腾、 曦、严、耀、献、琼、馨、露、蓝</string>
+    <string name="name_12">蔡、灿、禅、骋、聪、黛、璠、徽、绩、激、检、謇、键、矫、阶、琎、莲、临、 潞、璞、谦、 罄、 声、 誊、忆、怿、翼、应、舆、泽</string>
+
+
+    <string name="name_21">骊</string>
+    <string name="name_22">憬、橘、蒲、筱、梦、橙、蓉、颖、诺、晓、琏、璇、润、霏、霖</string>
+
+
+    <string name="name_31">鹂</string>
+    <string name="name_32">岑、衫、君、彤、兑、汝、含、汐、江、冷、妤、宏、妙、贝</string>
+
+
+    <string name="name_41">鹂</string>
+    <string name="name_42">巩、广、仪、庆、瑰、莹、瑭、皑、瑾、娴、锐、翩、漪、慧、颍、莹</string>
+
+
+</resources>
