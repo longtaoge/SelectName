@@ -14,7 +14,7 @@
     <application
         android:allowBackup="true"
         android:name="org.xiangbalao.common.Mapplication"
-        android:icon="@drawable/radish"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <uses-library android:name="android.test.runner" />
