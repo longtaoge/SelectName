@@ -8,7 +8,9 @@ import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.orhanobut.hawk.Hawk;
@@ -45,6 +47,7 @@ public class NameListActivity extends Activity implements OnClickListener {
 
     private List<String> nameList = new ArrayList<>();
     private ImageView btn_back;
+    private ScrollView root_scoll;
 
 
     @Override
@@ -117,6 +120,8 @@ public class NameListActivity extends Activity implements OnClickListener {
         rc_namelist.setLayoutManager(layoutManager);
         //设置为垂直布局，这也是默认的
         layoutManager.setOrientation(OrientationHelper.VERTICAL);
+
+
         //设置Adapter
         rc_namelist.setAdapter(recycleAdapter);
 
@@ -153,5 +158,6 @@ public class NameListActivity extends Activity implements OnClickListener {
         rc_namelist.setOnClickListener(this);
         btn_back = (ImageView) findViewById(R.id.btn_back);
         btn_back.setOnClickListener(this);
+
     }
 }
