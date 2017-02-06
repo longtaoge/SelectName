@@ -50,10 +50,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.My
 
         String name =mDatas.get(position);
 
-        if (name.length()>=2){
 
-            name="魏"+name;
-        }
 
 
         holder.tv.setText(name);

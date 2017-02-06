@@ -27,13 +27,8 @@
             android:layout_width="150dp"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
-            android:ellipsize="marquee"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:scrollHorizontally="true"
-            android:singleLine="true"
-            android:text="乡吧佬选名系统"
+            android:gravity="center"
+            tools:text="姓名详情"
             android:textColor="#ffffff"
             android:textSize="18sp" />
 

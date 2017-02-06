@@ -1,6 +1,7 @@
 package org.xiangbalao.selectname;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,7 +9,6 @@ import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -39,7 +39,7 @@ public class NameListActivity extends Activity implements OnClickListener {
     private TextView tvlayoutName;
 
     private RecyclerView rc_namelist;
-    private RecyclerView.Adapter recycleAdapter;
+    private MyRecyclerAdapter recycleAdapter;
 
 
     private TreeMap<String, String> nameMap = new TreeMap<>();
@@ -96,7 +96,7 @@ public class NameListActivity extends Activity implements OnClickListener {
                 for (Map.Entry<String, String> entry : nameMap.entrySet()) {
 
 
-                    nameList.add(entry.getKey());
+                    nameList.add("魏"+entry.getKey());
 
                 }
 
@@ -108,7 +108,16 @@ public class NameListActivity extends Activity implements OnClickListener {
 
 
         recycleAdapter = new MyRecyclerAdapter(NameListActivity.this, nameList);
+        recycleAdapter.setItemClickListener(new MyRecyclerAdapter.ItemClickListener() {
+            @Override
+            public void onClick(int position) {
+                Intent mInten = new Intent(NameListActivity.this, NameDetailActivity.class);
+                mInten.putExtra(Constant.NAMES, nameList.get(position));
+                startActivity(mInten);
 
+
+            }
+        });
 
         tv_name1.setText(String.valueOf(name1));
         tv_name2.setText(String.valueOf(name2));

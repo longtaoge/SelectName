@@ -12,4 +12,8 @@ public interface Constant {
 
     String NAME1 = "name1";
     String NAME2 = "name2";
+
+
+    String NAMES="names";
+
 }

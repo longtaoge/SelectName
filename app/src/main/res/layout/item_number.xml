@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_name_detail">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d9D3E31E"
+        android:padding="5sp"
+        tools:text="总格"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#f4a804">
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d9D3E31E"
+        android:padding="6sp"
+        tools:text="[1] (太极之数）太极之数，万物开泰，生发无穷，利禄亨通。 (大吉) " />
+
+
+</merge>
