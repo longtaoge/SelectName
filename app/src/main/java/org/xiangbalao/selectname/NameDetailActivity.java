@@ -1,6 +1,5 @@
 package org.xiangbalao.selectname;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +11,9 @@ import com.j256.ormlite.dao.Dao;
 
 import org.xiangbalao.common.Constant;
 import org.xiangbalao.common.db.DatabaseHelper;
+import org.xiangbalao.common.toast.ToastUtils;
 import org.xiangbalao.common.util.LogUtils;
+import org.xiangbalao.selectname.base.BaseActivity;
 import org.xiangbalao.selectname.common.weight.NumberItem;
 import org.xiangbalao.selectname.model.Number;
 import org.xiangbalao.selectname.model.Word;
@@ -21,7 +22,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 
-public class NameDetailActivity extends Activity implements OnClickListener {
+public class NameDetailActivity extends BaseActivity implements OnClickListener {
 
 
     private TextView tvTextView;
@@ -93,18 +94,45 @@ public class NameDetailActivity extends Activity implements OnClickListener {
         try {
             List<Word> wordList1 = wordDao.queryForEq("simplified", fristName);
             List<Word> wordList2 = wordDao.queryForEq("simplified", secendName);
+
+
             List<Word> wordList3 = wordDao.queryForEq("simplified", thirdName);
 
 
-            fristBihua = wordList1.get(0).getNumber();
+            if (wordList1.size() > 0) {
+                fristBihua = wordList1.get(0).getNumber();
+            } else {
+                ToastUtils.e("暂无__" + fristName + "数据").show();
+                LogUtils.i(NameDetailActivity.class.getSimpleName(), fristName);
 
-            secendBihua = wordList2.get(0).getNumber();
-
-            thirdBihua = wordList3.get(0).getNumber();
+            }
 
 
-        } catch (SQLException e) {
+            if (wordList2.size() > 0) {
+                secendBihua = wordList2.get(0).getNumber();
+
+            } else {
+                LogUtils.i(NameDetailActivity.class.getSimpleName(), secendName);
+                ToastUtils.e("暂无__" + secendName + "数据").show();
+
+
+            }
+
+
+            if (wordList3.size() > 0) {
+                thirdBihua = wordList3.get(0).getNumber();
+            } else {
+                LogUtils.i(NameDetailActivity.class.getSimpleName(), thirdName);
+                ToastUtils.e("暂无__" + secendName + "数据").show();
+
+            }
+
+
+        } catch (Exception e) {
             e.printStackTrace();
+
+
+            ToastUtils.e(e.toString() + "__" + name).show();
         }
 
 
@@ -190,7 +218,6 @@ public class NameDetailActivity extends Activity implements OnClickListener {
 
 
         }
-
 
 
     }

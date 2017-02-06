@@ -28,7 +28,7 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:gravity="center"
-            tools:text="姓名详情"
+            android:text="选名"
             android:textColor="#ffffff"
             android:textSize="18sp" />
 

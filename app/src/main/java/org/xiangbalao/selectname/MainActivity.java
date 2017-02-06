@@ -1,6 +1,5 @@
 package org.xiangbalao.selectname;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,10 +11,11 @@ import android.widget.TextView;
 import com.orhanobut.hawk.Hawk;
 
 import org.xiangbalao.common.Constant;
+import org.xiangbalao.selectname.base.BaseActivity;
 import org.xiangbalao.selectname.utils.DataUtil;
 
 
-public class MainActivity extends Activity implements OnClickListener {
+public class MainActivity extends BaseActivity implements OnClickListener {
 
     private final DataUtil dataUtil = new DataUtil();
     private Button btnSave;
@@ -88,25 +88,29 @@ public class MainActivity extends Activity implements OnClickListener {
 
 
                 layout1();
+                startActivity(mIntent);
                 break;
             case R.id.btndel:
 
                 layout2();
+                startActivity(mIntent);
                 break;
             case R.id.btnupdate:
 
                 layout3();
+                startActivity(mIntent);
                 break;
             case R.id.btnQuery:
 
                 layout4();
+                startActivity(mIntent);
                 break;
             default:
                 break;
         }
 
 
-        startActivity(mIntent);
+
 
     }
 

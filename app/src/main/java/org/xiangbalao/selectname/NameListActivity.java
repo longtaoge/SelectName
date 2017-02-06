@@ -17,13 +17,14 @@ import com.orhanobut.hawk.Hawk;
 
 import org.xiangbalao.common.Constant;
 import org.xiangbalao.selectname.adapter.MyRecyclerAdapter;
+import org.xiangbalao.selectname.base.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class NameListActivity extends Activity implements OnClickListener {
+public class NameListActivity extends BaseActivity implements OnClickListener {
 
 
     private TextView tv_name1;

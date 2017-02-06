@@ -1,6 +1,5 @@
 package org.xiangbalao.selectname;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -15,14 +14,16 @@ import android.widget.TextView;
 import com.orhanobut.hawk.Hawk;
 
 import org.xiangbalao.common.Constant;
+import org.xiangbalao.common.toast.ToastUtils;
 import org.xiangbalao.selectname.adapter.MyRecyclerAdapter;
+import org.xiangbalao.selectname.base.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class NameList1Activity extends Activity implements OnClickListener {
+public class NameList1Activity extends BaseActivity implements OnClickListener {
 
 
     private TextView tv_name1;
@@ -50,6 +51,12 @@ public class NameList1Activity extends Activity implements OnClickListener {
         setContentView(R.layout.activity_name_list1);
         initView();
 
+
+        if (!Hawk.isBuilt()) {
+
+            ToastUtils.e("请初始化Hawk").show();
+            return;
+        }
 
         name1 = Hawk.get(Constant.NAME1, null);
 
