@@ -3,23 +3,33 @@ package org.xiangbalao.selectname.ui;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Process;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatEditText;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
+import org.xiangbalao.common.Constant;
+import org.xiangbalao.common.toast.ToastUtils;
 import org.xiangbalao.selectname.R;
 
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
-
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
 
     private String TAG = "MainActivity";
+    private Button bt_test;
+    private AppCompatEditText etFirstName;
+    private AppCompatEditText lastname;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +62,12 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-
-
+        bt_test = (Button) findViewById(R.id.bt_test);
+        bt_test.setOnClickListener(this);
+        etFirstName = (AppCompatEditText) findViewById(R.id.etFirstName);
+        etFirstName.setOnClickListener(this);
+        lastname = (AppCompatEditText) findViewById(R.id.lastname);
+        lastname.setOnClickListener(this);
     }
 
     @Override
@@ -77,13 +91,17 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_loadLibrary) {
 
+            Intent mIntent = new Intent(MainActivity.this, SelectActivity.class);
+
+            startActivity(mIntent);
+
 
         } else if (id == R.id.nav_cleanPatch) {
 
 
         } else if (id == R.id.nav_killSelf) {
 
-            android.os.Process.killProcess(android.os.Process.myPid());
+            Process.killProcess(Process.myPid());
             System.exit(0);
 
         } else if (id == R.id.nav_info) {
@@ -97,7 +115,7 @@ public class MainActivity extends AppCompatActivity
             shareMsg("起名", "乡吧佬起名", "开源起名测名软件 : https://github.com/longtaoge/SelectName");
 
         } else if (id == R.id.nav_about) {
-           openBrowser(getString(R.string.about));
+            openBrowser(getString(R.string.about));
 
         }
 
@@ -124,7 +142,6 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-
     @Override
     protected void onResume() {
 
@@ -139,4 +156,43 @@ public class MainActivity extends AppCompatActivity
         super.onPause();
 
     }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.bt_test:
+
+                if (attest()) {
+                    Intent mIntent = new Intent(MainActivity.this, NameDetailActivity.class);
+
+                    mIntent.putExtra(Constant.NAMES, etFirstName.getText().toString().trim() + lastname.getText().toString().trim());
+                    startActivity(mIntent);
+
+                }
+
+                break;
+        }
+    }
+
+
+    protected boolean attest() {
+
+        // validate
+        String etFirstNameString = etFirstName.getText().toString().trim();
+        if (TextUtils.isEmpty(etFirstNameString)) {
+            ToastUtils.i("本版本只支持单字姓氏,请输入单字姓氏").show();
+            return false;
+        }
+
+        String lastnameString = lastname.getText().toString().trim();
+        if (TextUtils.isEmpty(lastnameString) || lastnameString.length() < 2) {
+            ToastUtils.i("本版本只支持两字名,请输入两字名").show();
+            return false;
+        }
+
+
+        return true;
+    }
+
+
 }

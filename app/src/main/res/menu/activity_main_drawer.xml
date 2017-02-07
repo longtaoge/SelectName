@@ -10,7 +10,7 @@
         <item
             android:id="@+id/nav_loadLibrary"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="起名" />
+            android:title="选名示例" />
         <item
             android:id="@+id/nav_cleanPatch"
             android:icon="@drawable/ic_menu_slideshow"

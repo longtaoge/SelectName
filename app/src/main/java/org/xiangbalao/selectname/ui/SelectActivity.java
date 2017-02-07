@@ -37,29 +37,22 @@ public class SelectActivity extends BaseActivity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nosql);
 
+        setContentView(R.layout.activity_select_name);
         initView();
 
-
-         new MyThead().start();
-
-
+        new MyThead().start();
 
 
     }
 
 
     public class MyThead extends Thread {
-
         @Override
         public void run() {
             super.run();
-
-
             dataUtil.initDb(SelectActivity.this);
             dataUtil.initWord(SelectActivity.this);
-
         }
     }
 
@@ -73,8 +66,6 @@ public class SelectActivity extends BaseActivity implements OnClickListener {
         btnupdate.setOnClickListener(this);
         btnQuery = (Button) findViewById(R.id.btnQuery);
         btnQuery.setOnClickListener(this);
-
-
         tvTextView = (TextView) findViewById(R.id.tv);
         tvTextView.setFocusable(true);
 
@@ -109,8 +100,6 @@ public class SelectActivity extends BaseActivity implements OnClickListener {
             default:
                 break;
         }
-
-
 
 
     }
