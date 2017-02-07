@@ -16,4 +16,8 @@ public interface Constant {
 
     String NAMES="names";
 
+
+    String FRISTNAME="fristName";
+
+
 }

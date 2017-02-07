@@ -93,11 +93,8 @@ public class NameListActivity extends BaseActivity implements OnClickListener {
 
             if (nameMap != null) {
 
-
                 for (Map.Entry<String, String> entry : nameMap.entrySet()) {
-
-
-                    nameList.add("魏"+entry.getKey());
+                    nameList.add(Hawk.get(Constant.FRISTNAME, "") + entry.getKey());
 
                 }
 

@@ -8,7 +8,6 @@
     android:background="@drawable/bg"
     android:orientation="vertical">
 
-
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -26,6 +25,16 @@
             android:text="选名"
             android:textColor="#ffffff"
             android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:paddingLeft="0dp"
+            android:paddingRight="20sp"
+            android:src="@drawable/btn_back" />
 
     </android.support.v7.widget.Toolbar>
 
@@ -53,20 +62,20 @@
                 <android.support.design.widget.TextInputLayout
                     android:id="@+id/til_password"
                     android:layout_width="match_parent"
-                    android:paddingTop="@dimen/activity_vertical_margin"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25sp"
-                    android:background="@drawable/background">
+                    android:background="@drawable/background"
+                    android:paddingTop="@dimen/activity_vertical_margin">
 
                     <android.support.v7.widget.AppCompatEditText
                         android:id="@+id/etFirstName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:textSize="14sp"
-                        android:hint="请输入姓氏"
+                        android:hint="请输入单字姓氏"
                         android:inputType="textPersonName"
-
+                        android:textSize="14sp"
+                        android:maxLength="2"
                         tools:ignore="UnusedAttribute" />
                 </android.support.design.widget.TextInputLayout>
 

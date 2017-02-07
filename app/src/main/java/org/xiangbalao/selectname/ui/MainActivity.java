@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity
     private Button bt_test;
     private AppCompatEditText etFirstName;
     private AppCompatEditText lastname;
+    private Button bt_des;
 
 
     @Override
@@ -68,6 +69,8 @@ public class MainActivity extends AppCompatActivity
         etFirstName.setOnClickListener(this);
         lastname = (AppCompatEditText) findViewById(R.id.lastname);
         lastname.setOnClickListener(this);
+        bt_des = (Button) findViewById(R.id.bt_des);
+        bt_des.setOnClickListener(this);
     }
 
     @Override
@@ -97,7 +100,8 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_cleanPatch) {
-
+            Intent mIntent = new Intent(MainActivity.this, TheoryShowActivity.class);
+            startActivity(mIntent);
 
         } else if (id == R.id.nav_killSelf) {
 
@@ -171,6 +175,10 @@ public class MainActivity extends AppCompatActivity
                 }
 
                 break;
+            case R.id.bt_des:
+
+
+                break;
         }
     }
 
@@ -180,13 +188,13 @@ public class MainActivity extends AppCompatActivity
         // validate
         String etFirstNameString = etFirstName.getText().toString().trim();
         if (TextUtils.isEmpty(etFirstNameString)) {
-            ToastUtils.i("本版本只支持单字姓氏,请输入单字姓氏").show();
+            ToastUtils.e("本版本只支持单字姓氏,请输入单字姓氏").show();
             return false;
         }
 
         String lastnameString = lastname.getText().toString().trim();
         if (TextUtils.isEmpty(lastnameString) || lastnameString.length() < 2) {
-            ToastUtils.i("本版本只支持两字名,请输入两字名").show();
+            ToastUtils.e("本版本只支持两字名,请输入两字名").show();
             return false;
         }
 

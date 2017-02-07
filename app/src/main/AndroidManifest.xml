@@ -49,6 +49,9 @@
             android:name="org.xiangbalao.selectname.ui.NameDetailActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name="org.xiangbalao.selectname.ui.TheoryShowActivity"
+            android:screenOrientation="portrait" />
 
     </application>
 

@@ -2,15 +2,19 @@ package org.xiangbalao.selectname.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.AppCompatEditText;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.orhanobut.hawk.Hawk;
 
 import org.xiangbalao.common.Constant;
+import org.xiangbalao.common.toast.ToastUtils;
 import org.xiangbalao.selectname.R;
 import org.xiangbalao.selectname.base.BaseActivity;
 import org.xiangbalao.selectname.utils.DataUtil;
@@ -33,6 +37,8 @@ public class SelectActivity extends BaseActivity implements OnClickListener {
 
 
     private String TAG = SelectActivity.class.getName();
+    private AppCompatEditText etFirstName;
+    private ImageView btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +47,25 @@ public class SelectActivity extends BaseActivity implements OnClickListener {
         setContentView(R.layout.activity_select_name);
         initView();
 
+
+        etFirstName.setText("魏");
         new MyThead().start();
 
 
+    }
+
+
+    protected boolean attest() {
+
+        // validate
+        String etFirstNameString = etFirstName.getText().toString().trim();
+        if (TextUtils.isEmpty(etFirstNameString)) {
+            ToastUtils.e("本版本只支持单字姓氏,请输入单字姓氏").show();
+            return false;
+        }
+
+
+        return true;
     }
 
 
@@ -69,38 +91,50 @@ public class SelectActivity extends BaseActivity implements OnClickListener {
         tvTextView = (TextView) findViewById(R.id.tv);
         tvTextView.setFocusable(true);
 
+        etFirstName = (AppCompatEditText) findViewById(R.id.etFirstName);
+        etFirstName.setOnClickListener(this);
+        btn_back = (ImageView) findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
 
         mIntent = new Intent(SelectActivity.this, NameList1Activity.class);
+
+
+        Hawk.put(Constant.FRISTNAME, etFirstName.getText().toString().trim());
+
         switch (v.getId()) {
             case R.id.btnSave:
-
-
-                layout1();
-                startActivity(mIntent);
+                if (attest()) {
+                    layout1();
+                    startActivity(mIntent);
+                }
                 break;
             case R.id.btndel:
-
-                layout2();
-                startActivity(mIntent);
+                if (attest()) {
+                    layout2();
+                    startActivity(mIntent);
+                }
                 break;
             case R.id.btnupdate:
-
-                layout3();
-                startActivity(mIntent);
+                if (attest()) {
+                    layout3();
+                    startActivity(mIntent);
+                }
                 break;
             case R.id.btnQuery:
-
-                layout4();
-                startActivity(mIntent);
+                if (attest()) {
+                    layout4();
+                    startActivity(mIntent);
+                }
                 break;
+            case R.id.btn_back:
             default:
+                onBackPressed();
                 break;
         }
-
 
     }
 
