@@ -25,4 +25,12 @@
         <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
         <item name="contentInsetEnd">0dp</item>
     </style>
+
+    <style name="style_common_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_button_height</item>
+        <item name="android:background">@drawable/selector_bg_common_button</item>
+        <item name="android:textColor">@drawable/common_button_text_selector</item>
+        <item name="android:layout_marginTop">15sp</item>
+    </style>
 </resources>

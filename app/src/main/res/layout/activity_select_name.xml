@@ -102,26 +102,27 @@
 
                 <Button
                     android:id="@+id/btnSave"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+
+                    style="@style/style_common_button"
                     android:text="格局1" />
 
                 <Button
                     android:id="@+id/btndel"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+
+                    style="@style/style_common_button"
                     android:text="格局2" />
 
                 <Button
                     android:id="@+id/btnupdate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+
+                    style="@style/style_common_button"
+
+
                     android:text="格局3" />
 
                 <Button
                     android:id="@+id/btnQuery"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/style_common_button"
                     android:text="格局4" />
             </LinearLayout>
         </ScrollView>
