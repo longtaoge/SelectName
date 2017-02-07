@@ -105,8 +105,16 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_killSelf) {
 
-            Process.killProcess(Process.myPid());
-            System.exit(0);
+            //Process.killProcess(Process.myPid());
+           // System.exit(0);
+
+
+            Intent data=new Intent(Intent.ACTION_SENDTO);
+            data.setData(Uri.parse("mailto:61852263@qq.com"));
+            data.putExtra(Intent.EXTRA_SUBJECT, "这是标题");
+            data.putExtra(Intent.EXTRA_TEXT, "这是内容");
+            startActivity(data);
+
 
         } else if (id == R.id.nav_info) {
 
