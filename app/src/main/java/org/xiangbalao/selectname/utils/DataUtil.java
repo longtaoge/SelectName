@@ -6,7 +6,7 @@ import com.j256.ormlite.dao.Dao;
 
 import org.xiangbalao.common.db.DatabaseHelper;
 import org.xiangbalao.common.util.LogUtils;
-import org.xiangbalao.selectname.SelectActivity;
+import org.xiangbalao.selectname.ui.SelectActivity;
 import org.xiangbalao.selectname.R;
 import org.xiangbalao.selectname.model.Number;
 import org.xiangbalao.selectname.model.Word;

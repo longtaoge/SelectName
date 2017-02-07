@@ -1,6 +1,5 @@
-package org.xiangbalao.selectname;
+package org.xiangbalao.selectname.ui;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -16,6 +15,7 @@ import android.widget.TextView;
 import com.orhanobut.hawk.Hawk;
 
 import org.xiangbalao.common.Constant;
+import org.xiangbalao.selectname.R;
 import org.xiangbalao.selectname.adapter.MyRecyclerAdapter;
 import org.xiangbalao.selectname.base.BaseActivity;
 

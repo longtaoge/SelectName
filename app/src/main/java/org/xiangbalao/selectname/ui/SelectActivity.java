@@ -1,4 +1,4 @@
-package org.xiangbalao.selectname;
+package org.xiangbalao.selectname.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.orhanobut.hawk.Hawk;
 
 import org.xiangbalao.common.Constant;
+import org.xiangbalao.selectname.R;
 import org.xiangbalao.selectname.base.BaseActivity;
 import org.xiangbalao.selectname.utils.DataUtil;
 

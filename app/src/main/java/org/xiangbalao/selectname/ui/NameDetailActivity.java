@@ -1,4 +1,4 @@
-package org.xiangbalao.selectname;
+package org.xiangbalao.selectname.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,8 +13,9 @@ import org.xiangbalao.common.Constant;
 import org.xiangbalao.common.db.DatabaseHelper;
 import org.xiangbalao.common.toast.ToastUtils;
 import org.xiangbalao.common.util.LogUtils;
+import org.xiangbalao.selectname.R;
 import org.xiangbalao.selectname.base.BaseActivity;
-import org.xiangbalao.selectname.common.weight.NumberItem;
+import org.xiangbalao.common.weight.NumberItem;
 import org.xiangbalao.selectname.model.Number;
 import org.xiangbalao.selectname.model.Word;
 

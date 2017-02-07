@@ -22,7 +22,7 @@
 
         <activity
             android:name="org.xiangbalao.selectname.ui.MainActivity"
-            android:label=" "
+            android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,21 +32,21 @@
         </activity>
 
         <activity
-            android:name="org.xiangbalao.selectname.SelectActivity"
+            android:name="org.xiangbalao.selectname.ui.SelectActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="org.xiangbalao.selectname.NameListActivity"
+            android:name="org.xiangbalao.selectname.ui.NameListActivity"
             android:screenOrientation="portrait" />
 
 
         <activity
-            android:name="org.xiangbalao.selectname.NameList1Activity"
+            android:name="org.xiangbalao.selectname.ui.NameList1Activity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="org.xiangbalao.selectname.NameDetailActivity"
+            android:name="org.xiangbalao.selectname.ui.NameDetailActivity"
             android:screenOrientation="portrait" />
 
 

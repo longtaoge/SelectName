@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity
      */
     private void initView() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
         final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity
                 , R.string.close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-        toolbar.setTitle("");
+
         toolbar.canShowOverflowMenu();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -88,15 +89,15 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_info) {
 
             //打开浏览器
-        //    openBrowser(getString(R.string.tinker));
+            openBrowser(getString(R.string.about));
 
 
         } else if (id == R.id.nav_share) {
             //分享
-           // shareMsg(getString(R.string.hotfix), getString(R.string.tinkerdome), getString(R.string.share));
+            shareMsg("起名", "乡吧佬起名", "开源起名测名软件 : https://github.com/longtaoge/SelectName");
 
         } else if (id == R.id.nav_about) {
-          //  openBrowser(getString(R.string.about));
+           openBrowser(getString(R.string.about));
 
         }
 

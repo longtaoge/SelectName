@@ -86,50 +86,50 @@
                     tools:text="姓名" />
 
 
-                <org.xiangbalao.selectname.common.weight.NumberItem
+                <org.xiangbalao.common.weight.NumberItem
                     android:id="@+id/numberitem_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
                     android:orientation="vertical">
 
-                </org.xiangbalao.selectname.common.weight.NumberItem>
+                </org.xiangbalao.common.weight.NumberItem>
 
-                <org.xiangbalao.selectname.common.weight.NumberItem
+                <org.xiangbalao.common.weight.NumberItem
                     android:id="@+id/numberitem_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
                     android:orientation="vertical">
 
-                </org.xiangbalao.selectname.common.weight.NumberItem>
+                </org.xiangbalao.common.weight.NumberItem>
 
-                <org.xiangbalao.selectname.common.weight.NumberItem
+                <org.xiangbalao.common.weight.NumberItem
                     android:id="@+id/numberitem_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
                     android:orientation="vertical">
 
-                </org.xiangbalao.selectname.common.weight.NumberItem>
+                </org.xiangbalao.common.weight.NumberItem>
 
-                <org.xiangbalao.selectname.common.weight.NumberItem
+                <org.xiangbalao.common.weight.NumberItem
                     android:id="@+id/numberitem_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
                     android:orientation="vertical">
 
-                </org.xiangbalao.selectname.common.weight.NumberItem>
+                </org.xiangbalao.common.weight.NumberItem>
 
-                <org.xiangbalao.selectname.common.weight.NumberItem
+                <org.xiangbalao.common.weight.NumberItem
                     android:id="@+id/numberitem_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
                     android:orientation="vertical">
 
-                </org.xiangbalao.selectname.common.weight.NumberItem>
+                </org.xiangbalao.common.weight.NumberItem>
 
 
             </LinearLayout>

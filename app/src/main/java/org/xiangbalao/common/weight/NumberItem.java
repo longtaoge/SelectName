@@ -1,4 +1,4 @@
-package org.xiangbalao.selectname.common.weight;
+package org.xiangbalao.common.weight;
 
 import android.content.Context;
 import android.text.TextUtils;
