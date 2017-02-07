@@ -6,7 +6,7 @@ import com.j256.ormlite.dao.Dao;
 
 import org.xiangbalao.common.db.DatabaseHelper;
 import org.xiangbalao.common.util.LogUtils;
-import org.xiangbalao.selectname.MainActivity;
+import org.xiangbalao.selectname.SelectActivity;
 import org.xiangbalao.selectname.R;
 import org.xiangbalao.selectname.model.Number;
 import org.xiangbalao.selectname.model.Word;
@@ -29,7 +29,7 @@ public class DataUtil {
             // 或者 dao=DBFactory.getDao(OmliteActivity.this, User.class);
         } catch (SQLException e) {
             e.printStackTrace();
-            LogUtils.i(MainActivity.class.getSimpleName(), e.toString());
+            LogUtils.i(SelectActivity.class.getSimpleName(), e.toString());
         }
 
 
@@ -44,14 +44,14 @@ public class DataUtil {
             number.setJixiong(jixiong);
 
 
-            LogUtils.i(MainActivity.class.getSimpleName(), jixiong);
+            LogUtils.i(SelectActivity.class.getSimpleName(), jixiong);
 
 
             try {
                 dao.createOrUpdate(number);
             } catch (SQLException e) {
                 e.printStackTrace();
-                LogUtils.i(MainActivity.class.getSimpleName(), e.toString());
+                LogUtils.i(SelectActivity.class.getSimpleName(), e.toString());
             }
 
         }
@@ -72,7 +72,7 @@ public class DataUtil {
             // 或者 dao=DBFactory.getDao(OmliteActivity.this, User.class);
         } catch (SQLException e) {
             e.printStackTrace();
-            LogUtils.i(MainActivity.class.getSimpleName(), e.toString());
+            LogUtils.i(SelectActivity.class.getSimpleName(), e.toString());
         }
 
 
@@ -84,7 +84,7 @@ public class DataUtil {
             char [] chars=word.toCharArray();
 
 
-            LogUtils.i(MainActivity.class.getSimpleName(), word);
+            LogUtils.i(SelectActivity.class.getSimpleName(), word);
 
 
             for (int j=0;j<chars.length;j++){
@@ -96,7 +96,7 @@ public class DataUtil {
                     daoWord.createOrUpdate(mWord);
                 } catch (SQLException e) {
                     e.printStackTrace();
-                    LogUtils.e(MainActivity.class.getSimpleName(), e.toString());
+                    LogUtils.e(SelectActivity.class.getSimpleName(), e.toString());
                 }
 
 
@@ -113,10 +113,10 @@ public class DataUtil {
         }
         try {
             List<Word> wordList= daoWord.queryForAll();
-            LogUtils.i(MainActivity.class.getSimpleName(), wordList.size()+"__");
+            LogUtils.i(SelectActivity.class.getSimpleName(), wordList.size()+"__");
         } catch (SQLException e) {
             e.printStackTrace();
-            LogUtils.i(MainActivity.class.getSimpleName(), e.toString());
+            LogUtils.i(SelectActivity.class.getSimpleName(), e.toString());
         }
 
     }

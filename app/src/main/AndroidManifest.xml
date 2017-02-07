@@ -19,15 +19,22 @@
         android:theme="@style/AppTheme.NoActionBar">
         <uses-library android:name="android.test.runner" />
 
+
         <activity
-            android:name="org.xiangbalao.selectname.MainActivity"
-            android:label="@string/app_name"
+            android:name="org.xiangbalao.selectname.ui.MainActivity"
+            android:label=" "
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name="org.xiangbalao.selectname.SelectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="org.xiangbalao.selectname.NameListActivity"
