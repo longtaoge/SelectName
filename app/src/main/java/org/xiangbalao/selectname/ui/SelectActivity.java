@@ -19,6 +19,8 @@ import org.xiangbalao.selectname.R;
 import org.xiangbalao.selectname.base.BaseActivity;
 import org.xiangbalao.selectname.utils.DataUtil;
 
+import java.io.IOException;
+
 
 public class SelectActivity extends BaseActivity implements OnClickListener {
 
@@ -49,7 +51,7 @@ public class SelectActivity extends BaseActivity implements OnClickListener {
 
 
         etFirstName.setText("魏");
-        new MyThead().start();
+     //   new MyThead().start();
 
 
     }
@@ -73,8 +75,15 @@ public class SelectActivity extends BaseActivity implements OnClickListener {
         @Override
         public void run() {
             super.run();
-            dataUtil.initDb(SelectActivity.this);
-            dataUtil.initWord(SelectActivity.this);
+          //  dataUtil.initDb(SelectActivity.this);
+           // dataUtil.initWord(SelectActivity.this);
+
+            try {
+                dataUtil.copyDataBase(SelectActivity.this);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         }
     }
 
@@ -131,8 +140,11 @@ public class SelectActivity extends BaseActivity implements OnClickListener {
                 }
                 break;
             case R.id.btn_back:
-            default:
                 onBackPressed();
+
+                break;
+            default:
+
                 break;
         }
 

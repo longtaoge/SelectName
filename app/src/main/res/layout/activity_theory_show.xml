@@ -88,7 +88,7 @@
                             android:paddingRight="@dimen/activity_vertical_margin"
                             android:paddingTop="@dimen/activity_vertical_margin"
 
-                            android:text="测名规则:"
+                            android:text="测名规则"
                             android:textColor="#f11906" />
 
                         <View
@@ -127,7 +127,7 @@
                             android:paddingLeft="@dimen/activity_vertical_margin"
                             android:paddingRight="@dimen/activity_vertical_margin"
                             android:paddingTop="@dimen/activity_vertical_margin"
-                            android:text="数据来源:"
+                            android:text="数据来源"
                             android:textColor="#f11906" />
 
                         <View

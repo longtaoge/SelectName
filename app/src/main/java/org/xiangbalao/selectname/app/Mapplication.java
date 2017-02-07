@@ -10,6 +10,9 @@ import org.xiangbalao.common.db.DatabaseHelper;
 import org.xiangbalao.common.toast.ToastUtils;
 import org.xiangbalao.selectname.model.Number;
 import org.xiangbalao.selectname.model.Word;
+import org.xiangbalao.selectname.utils.DataUtil;
+
+import java.io.IOException;
 
 /**
  * Created by longtaoge on 17/2/1.
@@ -56,9 +59,18 @@ public class Mapplication extends Application {
         }).build();
 
         StringBuilder dbPath = new StringBuilder("name.db");
+//        StringBuilder dbPath = new StringBuilder();
 //        // 调试或开发环境 数据放到SD卡
 //        dbPath.append(Environment.getExternalStorageDirectory().getAbsolutePath())
 //                .append("/name.db");
+
+        DataUtil dataUtil = new DataUtil();
+
+        try {
+            dataUtil.copyDataBase(getApplicationContext());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
         // 初始化
