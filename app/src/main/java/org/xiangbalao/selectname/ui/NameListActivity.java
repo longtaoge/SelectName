@@ -52,6 +52,11 @@ public class NameListActivity extends BaseActivity implements OnClickListener {
 
 
     @Override
+    protected void initData() {
+
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_name_list);

@@ -10,10 +10,12 @@ import org.xiangbalao.common.weight.swipebacklayout.lib.app.SwipeBackActivity;
  * Created by longtaoge on 17/2/6.
  */
 
-public class BaseActivity extends SwipeBackActivity {
+public abstract class BaseActivity extends SwipeBackActivity {
 
 
     protected ProgressDialog dialog;
+    protected abstract void  initData();
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

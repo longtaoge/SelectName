@@ -2,13 +2,15 @@ package org.xiangbalao.selectname.model;
 
 import com.j256.ormlite.field.DatabaseField;
 
+import org.xiangbalao.selectname.base.BaseBean;
+
 import java.io.Serializable;
 
 /**
  * Created by longtaoge on 17/2/5.
  */
 
-public class Number implements Serializable {
+public class Number extends BaseBean {
 
     @DatabaseField(columnName = "_id", generatedId = true, allowGeneratedIdInsert = true)//必须为int
     private int id;

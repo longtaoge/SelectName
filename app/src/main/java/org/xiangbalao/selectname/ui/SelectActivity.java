@@ -43,17 +43,17 @@ public class SelectActivity extends BaseActivity implements OnClickListener {
     private ImageView btn_back;
 
     @Override
+    protected void initData() {
+
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_select_name);
         initView();
-
-
         etFirstName.setText("魏");
-     //   new MyThead().start();
-
-
     }
 
 
@@ -75,8 +75,8 @@ public class SelectActivity extends BaseActivity implements OnClickListener {
         @Override
         public void run() {
             super.run();
-          //  dataUtil.initDb(SelectActivity.this);
-           // dataUtil.initWord(SelectActivity.this);
+            //  dataUtil.initDb(SelectActivity.this);
+            // dataUtil.initWord(SelectActivity.this);
 
             try {
                 dataUtil.copyDataBase(SelectActivity.this);

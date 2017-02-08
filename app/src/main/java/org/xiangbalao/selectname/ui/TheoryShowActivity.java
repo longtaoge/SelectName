@@ -19,6 +19,11 @@ public class TheoryShowActivity extends BaseActivity implements OnClickListener 
     private ImageView btn_back;
 
     @Override
+    protected void initData() {
+
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 

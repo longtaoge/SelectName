@@ -18,9 +18,10 @@ import android.widget.Button;
 import org.xiangbalao.common.Constant;
 import org.xiangbalao.common.toast.ToastUtils;
 import org.xiangbalao.selectname.R;
+import org.xiangbalao.selectname.base.BaseActivity;
 
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
 
@@ -32,11 +33,17 @@ public class MainActivity extends AppCompatActivity
 
 
     @Override
+    protected void initData() {
+
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
 
+        setSwipeBackEnable(false);
 
     }
 
