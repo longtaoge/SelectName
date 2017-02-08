@@ -214,25 +214,15 @@ public class NameList1Activity extends BaseActivity implements OnClickListener {
                 }
 
 
-                name1 = Hawk.get(Constant.NAME1, null);
-
-                name2 = Hawk.get(Constant.NAME2, null);
-
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        dialog.dismiss();
-                        layoutName = Hawk.get(Constant.LAYOUT, "五格起名");
-                        tv_name1.setText(String.valueOf(name1));
-                        tv_name2.setText(String.valueOf(name2));
-                        tvLayoutName.setText(String.valueOf(layoutName));
-                    }
-                });
+                fillData();
 
             } catch (SQLException e) {
                 e.printStackTrace();
             }
 
+        }else {
+
+            fillData();
         }
 
 
@@ -270,6 +260,23 @@ public class NameList1Activity extends BaseActivity implements OnClickListener {
 
 
 
+    }
+
+    private void fillData() {
+        name1 = Hawk.get(Constant.NAME1, null);
+
+        name2 = Hawk.get(Constant.NAME2, null);
+
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                dialog.dismiss();
+                layoutName = Hawk.get(Constant.LAYOUT, "五格起名");
+                tv_name1.setText(String.valueOf(name1));
+                tv_name2.setText(String.valueOf(name2));
+                tvLayoutName.setText(String.valueOf(layoutName));
+            }
+        });
     }
 
 

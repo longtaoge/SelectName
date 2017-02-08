@@ -1,5 +1,6 @@
 package org.xiangbalao.selectname.ui;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -113,12 +114,18 @@ public class MainActivity extends BaseActivity
             //Process.killProcess(Process.myPid());
             // System.exit(0);
 
+              try {
+                  Intent data = new Intent(Intent.ACTION_SENDTO);
+                  data.setData(Uri.parse("mailto:61852263@qq.com"));
+                  data.putExtra(Intent.EXTRA_SUBJECT, "这是标题");
+                  data.putExtra(Intent.EXTRA_TEXT, "这是内容");
+                  startActivity(data);
 
-            Intent data = new Intent(Intent.ACTION_SENDTO);
-            data.setData(Uri.parse("mailto:61852263@qq.com"));
-            data.putExtra(Intent.EXTRA_SUBJECT, "这是标题");
-            data.putExtra(Intent.EXTRA_TEXT, "这是内容");
-            startActivity(data);
+              }catch (Exception e){
+
+
+              }
+
 
 
         } else if (id == R.id.nav_info) {
@@ -132,6 +139,8 @@ public class MainActivity extends BaseActivity
             shareMsg("起名", "乡吧佬起名", "开源起名测名软件 : https://github.com/longtaoge/SelectName");
 
         } else if (id == R.id.nav_about) {
+
+
             openBrowser(getString(R.string.about));
 
         }
@@ -153,9 +162,19 @@ public class MainActivity extends BaseActivity
 
 
     private void openBrowser(String url) {
-        Uri uri = Uri.parse(url);
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
+
+
+        try {
+            Uri uri = Uri.parse(url);
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }catch (ActivityNotFoundException e){
+
+            ToastUtils.w("请安装浏览器后打开"+e.toString()).show();
+
+        }
+
+
     }
 
 

@@ -85,9 +85,7 @@
                     android:id="@+id/tv_name1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-
-                    android:text="ddd"
+                    android:text=""
                     android:textColor="#353131"
                     android:textSize="13sp" />
             </LinearLayout>
