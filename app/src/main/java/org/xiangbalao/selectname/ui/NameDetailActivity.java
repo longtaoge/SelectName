@@ -102,15 +102,13 @@ public class NameDetailActivity extends BaseActivity implements OnClickListener 
         try {
             List<Word> wordList1 = wordDao.queryForEq("simplified", fristName);
             List<Word> wordList2 = wordDao.queryForEq("simplified", secendName);
-
-
             List<Word> wordList3 = wordDao.queryForEq("simplified", thirdName);
 
 
             if (wordList1.size() > 0) {
                 fristBihua = wordList1.get(0).getNumber();
             } else {
-                ToastUtils.e("暂无__" + fristName + "数据").show();
+                ToastUtils.e("暂无 " + fristName + " 数据").show();
                 LogUtils.i(NameDetailActivity.class.getSimpleName(), fristName);
 
             }
@@ -121,7 +119,7 @@ public class NameDetailActivity extends BaseActivity implements OnClickListener 
 
             } else {
                 LogUtils.i(NameDetailActivity.class.getSimpleName(), secendName);
-                ToastUtils.e("暂无__" + secendName + "数据").show();
+                ToastUtils.e("暂无 " + secendName + " 数据").show();
 
 
             }
@@ -131,7 +129,7 @@ public class NameDetailActivity extends BaseActivity implements OnClickListener 
                 thirdBihua = wordList3.get(0).getNumber();
             } else {
                 LogUtils.i(NameDetailActivity.class.getSimpleName(), thirdName);
-                ToastUtils.e("暂无__" + secendName + "数据").show();
+                ToastUtils.e("暂无 " + thirdName + " 数据").show();
 
             }
 
@@ -140,7 +138,7 @@ public class NameDetailActivity extends BaseActivity implements OnClickListener 
             e.printStackTrace();
 
 
-            ToastUtils.e(e.toString() + "__" + name).show();
+            ToastUtils.e(e.toString() + " " + name).show();
         }
 
 

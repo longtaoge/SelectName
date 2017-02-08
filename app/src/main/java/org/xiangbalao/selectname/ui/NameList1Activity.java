@@ -222,12 +222,7 @@ public class NameList1Activity extends BaseActivity implements OnClickListener {
                     @Override
                     public void run() {
                         dialog.dismiss();
-
-
-
                         layoutName = Hawk.get(Constant.LAYOUT, "五格起名");
-
-
                         tv_name1.setText(String.valueOf(name1));
                         tv_name2.setText(String.valueOf(name2));
                         tvLayoutName.setText(String.valueOf(layoutName));
