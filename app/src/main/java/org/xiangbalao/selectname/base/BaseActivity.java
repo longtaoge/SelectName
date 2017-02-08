@@ -2,8 +2,8 @@ package org.xiangbalao.selectname.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
+import org.xiangbalao.common.ProgressDialog;
 import org.xiangbalao.common.weight.swipebacklayout.lib.app.SwipeBackActivity;
 
 /**
@@ -11,16 +11,16 @@ import org.xiangbalao.common.weight.swipebacklayout.lib.app.SwipeBackActivity;
  */
 
 public class BaseActivity extends SwipeBackActivity {
+
+
+    protected ProgressDialog dialog;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
+        dialog = ProgressDialog.createDialog(this);
+        dialog.setMessage("运算中...");
     }
-
-
-
 
 
 }
