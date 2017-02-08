@@ -111,7 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:background="#d9D3E31E"
+            android:background="#effff279"
             tools:listitem="@layout/item_name">
 
         </android.support.v7.widget.RecyclerView>

@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import org.xiangbalao.selectname.R;
@@ -25,8 +26,6 @@ public class MyFiveLayoutAdapter extends RecyclerView.Adapter<MyFiveLayoutAdapte
     private List<FiveLayout> mDatas;
     private Context mContext;
     private LayoutInflater inflater;
-
-
 
 
     public void setItemClickListener(ItemClickListener mItemClickListener) {
@@ -53,19 +52,37 @@ public class MyFiveLayoutAdapter extends RecyclerView.Adapter<MyFiveLayoutAdapte
     public void onBindViewHolder(MyViewHolder holder, final int position) {
 
 
-        FiveLayout mFiveLayout =mDatas.get(position);
+        FiveLayout mFiveLayout = mDatas.get(position);
 
 
+        StringBuilder bihua = new StringBuilder();
+
+        bihua.append(mFiveLayout.getFirstBihua())
+                .append("画-")
+                .append(mFiveLayout.getSecondBihua())
+                .append("画-")
+                .append(mFiveLayout.getThirdBihua())
+                .append("画");
+        holder.tv_bihua.setText(bihua.toString());
 
 
-        holder.tv.setText(mFiveLayout.getFirstBihua()+"___");
+        StringBuilder wuge = new StringBuilder();
+        wuge.append("总格-")
+                .append(mFiveLayout.getZhongge())
+                .append(" 天格-")
+                .append(mFiveLayout.getTiange())
+                .append(" 地格-")
+                .append(mFiveLayout.getDige())
+                .append(" 人格-")
+                .append(mFiveLayout.getRenge())
+                .append(" 外格-")
+                .append(mFiveLayout.getWaige());
 
-        holder.rootview.setOnClickListener(new View.OnClickListener() {
+        holder.tv_fivelayout.setText(wuge.toString());
+        holder.rootView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-                if (mItemClickListener!=null){
+                if (mItemClickListener != null) {
 
                     mItemClickListener.onClick(position);
                 }
@@ -77,28 +94,34 @@ public class MyFiveLayoutAdapter extends RecyclerView.Adapter<MyFiveLayoutAdapte
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = inflater.inflate(R.layout.item_name, null, false);
+        View view = inflater.inflate(R.layout.item_fivelayout, null, false);
         MyViewHolder holder = new MyViewHolder(view);
         return holder;
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView tv;
-        View rootview;
+        public View rootView;
+        public TextView tv_title;
+        public TextView tv_bihua;
+        public TextView tv_fivelayout;
+        public LinearLayout root_view;
 
-        public MyViewHolder(View view) {
-            super(view);
-            tv = (TextView) view.findViewById(R.id.tv_name);
-            rootview = view.findViewById(R.id.root_view);
+        public MyViewHolder(View rootView) {
 
+            super(rootView);
+            this.rootView = rootView;
+            this.tv_title = (TextView) rootView.findViewById(R.id.tv_title);
+            this.tv_bihua = (TextView) rootView.findViewById(R.id.tv_bihua);
+            this.tv_fivelayout = (TextView) rootView.findViewById(R.id.tv_fivelayout);
+            this.root_view = (LinearLayout) rootView.findViewById(R.id.root_view);
         }
 
     }
 
 
-   public interface ItemClickListener{
-       void onClick(int position);
+    public interface ItemClickListener {
+        void onClick(int position);
 
     }
 
