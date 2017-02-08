@@ -15,9 +15,11 @@ import android.widget.TextView;
 import com.orhanobut.hawk.Hawk;
 
 import org.xiangbalao.common.Constant;
+import org.xiangbalao.common.util.LogUtils;
 import org.xiangbalao.selectname.R;
 import org.xiangbalao.selectname.adapter.MyRecyclerAdapter;
 import org.xiangbalao.selectname.base.BaseActivity;
+import org.xiangbalao.selectname.model.FiveLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +50,9 @@ public class NameListActivity extends BaseActivity implements OnClickListener {
 
     private List<String> nameList = new ArrayList<>();
     private ImageView btn_back;
-    private ScrollView root_scoll;
+
+
+
 
 
     @Override
@@ -68,6 +72,8 @@ public class NameListActivity extends BaseActivity implements OnClickListener {
         name2 = Hawk.get(Constant.NAME2, null);
 
         layoutName = Hawk.get(Constant.LAYOUT, null);
+
+
 
 
         if (name1 != null && name2 != null) {

@@ -20,4 +20,8 @@ public interface Constant {
     String FRISTNAME="fristName";
 
 
+
+    String LAYOUTLIST ="layoutList";
+
+
 }

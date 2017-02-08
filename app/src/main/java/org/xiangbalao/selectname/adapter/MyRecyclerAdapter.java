@@ -17,6 +17,10 @@ import java.util.List;
 
 public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.MyViewHolder> {
 
+    public void setmDatas(List<String> mDatas) {
+        this.mDatas = mDatas;
+    }
+
     private List<String> mDatas;
     private Context mContext;
     private LayoutInflater inflater;

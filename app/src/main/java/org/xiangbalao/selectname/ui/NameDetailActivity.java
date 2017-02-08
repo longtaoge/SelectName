@@ -37,6 +37,8 @@ public class NameDetailActivity extends BaseActivity implements OnClickListener 
     private Dao<Word, String> wordDao;
 
     private DatabaseHelper helper;
+
+
     private String TAG = NameDetailActivity.class.getName();
 
 

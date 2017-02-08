@@ -99,9 +99,14 @@ public class ChooseNameActivity extends BaseActivity
             @Override
             public void onClick(int position) {
 
-                Hawk.put(Constant.NAME1, "test");
 
-                Intent mIntent = new Intent(ChooseNameActivity.this, NameListActivity.class);
+
+            //    Hawk.put(Constant.NAME1, layoutList.get(position));
+
+                Intent mIntent = new Intent(ChooseNameActivity.this, NameList1Activity.class);
+
+
+                mIntent.putExtra(Constant.LAYOUTLIST,layoutList.get(position));
 
                 startActivity(mIntent);
 
