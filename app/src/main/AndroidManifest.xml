@@ -34,8 +34,7 @@
         <activity
             android:name="org.xiangbalao.selectname.ui.SelectActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="org.xiangbalao.selectname.ui.NameListActivity"
             android:screenOrientation="portrait" />
@@ -52,6 +51,11 @@
         <activity
             android:name="org.xiangbalao.selectname.ui.TheoryShowActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name="org.xiangbalao.selectname.ui.ChooseNameActivity"
+            android:screenOrientation="portrait" />
+
 
     </application>
 

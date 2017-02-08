@@ -3,7 +3,6 @@ package org.xiangbalao.selectname.ui;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Process;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -91,13 +90,12 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_loadPatch) {
 
-
-        } else if (id == R.id.nav_loadLibrary) {
-
-            Intent mIntent = new Intent(MainActivity.this, SelectActivity.class);
-
+            Intent mIntent = new Intent(MainActivity.this, ChooseNameActivity.class);
             startActivity(mIntent);
 
+        } else if (id == R.id.nav_loadLibrary) {
+            Intent mIntent = new Intent(MainActivity.this, SelectActivity.class);
+            startActivity(mIntent);
 
         } else if (id == R.id.nav_cleanPatch) {
             Intent mIntent = new Intent(MainActivity.this, TheoryShowActivity.class);
@@ -106,10 +104,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_killSelf) {
 
             //Process.killProcess(Process.myPid());
-           // System.exit(0);
+            // System.exit(0);
 
 
-            Intent data=new Intent(Intent.ACTION_SENDTO);
+            Intent data = new Intent(Intent.ACTION_SENDTO);
             data.setData(Uri.parse("mailto:61852263@qq.com"));
             data.putExtra(Intent.EXTRA_SUBJECT, "这是标题");
             data.putExtra(Intent.EXTRA_TEXT, "这是内容");

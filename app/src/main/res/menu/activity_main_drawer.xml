@@ -6,7 +6,7 @@
             android:id="@+id/nav_loadPatch"
             android:icon="@drawable/ic_menu_camera"
 
-            android:title="测名" />
+            android:title="五格起名" />
         <item
             android:id="@+id/nav_loadLibrary"
             android:icon="@drawable/ic_menu_gallery"

@@ -30,7 +30,7 @@
                 android:layout_gravity="center"
                 android:layout_centerInParent="true"
                 android:gravity="center"
-                android:text="测名"
+                android:text="五格测名"
                 android:textColor="#ffffff"
                 android:textSize="18sp" />
 
