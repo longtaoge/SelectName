@@ -28,9 +28,6 @@ public class NameDetailActivity extends BaseActivity implements OnClickListener 
 
     private TextView tvTextView;
 
-    private Intent mIntent;
-
-
     private Dao<Number, String> numberDao;
 
 

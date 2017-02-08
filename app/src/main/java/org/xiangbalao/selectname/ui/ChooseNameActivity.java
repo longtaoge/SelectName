@@ -100,13 +100,12 @@ public class ChooseNameActivity extends BaseActivity
             public void onClick(int position) {
 
 
-
-            //    Hawk.put(Constant.NAME1, layoutList.get(position));
+                //    Hawk.put(Constant.NAME1, layoutList.get(position));
 
                 Intent mIntent = new Intent(ChooseNameActivity.this, NameList1Activity.class);
 
 
-                mIntent.putExtra(Constant.LAYOUTLIST,layoutList.get(position));
+                mIntent.putExtra(Constant.LAYOUTLIST, layoutList.get(position));
 
                 startActivity(mIntent);
 
@@ -202,9 +201,8 @@ public class ChooseNameActivity extends BaseActivity
 
 
             if (words.size() > 0) {
+                Hawk.put(Constant.FRISTNAME, etFirstName.getText().toString().trim());
                 Word temWord = words.get(0);
-
-
                 //
                 for (int sencendWord = 1; sencendWord <= 30; sencendWord++) {
                     for (int thirdWord = 1; thirdWord <= 30; thirdWord++) {
